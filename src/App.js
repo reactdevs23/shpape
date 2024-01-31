@@ -51,13 +51,13 @@ function App() {
     },
     second: {
       icon: pdfLogo,
-      highlight: true,
+      highlight: false,
       line: <Line2 color="#6b707b" />,
       highlightedLine: <HighlightedLine2 color="#c01b24" />,
     },
     third: {
       icon: sql,
-      highlight: false,
+      highlight: true,
       line: <Line3 color="#6c7079" />,
       highlightedLine: <HightlightedLine3 color="#db7533" />,
     },
@@ -81,7 +81,7 @@ function App() {
     },
     seventh: {
       icon: slick,
-      highlight: true,
+      highlight: false,
       line: <Line7 color="#6b7178" />,
       highlightedLine: <HighlightedLine7 color="#E01E5A" />,
     },
