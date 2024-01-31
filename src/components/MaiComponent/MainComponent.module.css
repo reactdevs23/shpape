@@ -1,0 +1,263 @@
+.mainWrapper {
+  min-height: 100vh;
+  background: var(--bgColor);
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 90%;
+
+  margin: 0 auto;
+}
+.mainContainer {
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+.container {
+  --opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagesContainer {
+  max-width: 852px;
+  width: 100%;
+}
+.firstImageContainer {
+  margin-left: 170px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  background: var(--secondaryColor);
+  width: 68px;
+  height: 64px;
+  opacity: var(--opacity);
+}
+
+.firstImageContainer .line1 {
+  content: " ";
+  position: absolute;
+  width: 388px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 68px;
+
+  z-index: -1;
+}
+.secondImageContainer {
+  margin-left: 295px;
+
+  width: 68px;
+  height: 68px;
+  transform: translateY(-10px);
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.secondImageContainer .line2 {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  left: 68px;
+  width: 184px;
+  height: 10px;
+
+  z-index: -1;
+}
+
+.thirdImageContainer {
+  margin-left: 180px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  margin-top: -15px;
+  position: relative;
+  z-index: 2;
+  opacity: var(--opacity);
+}
+.thirdImageContainer .line3 {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80px;
+  width: 208px;
+  height: 10px;
+  z-index: -1;
+}
+.fourthImageContainer {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  position: relative;
+  z-index: 1;
+  margin-top: -80px;
+  opacity: var(--opacity);
+}
+.fourthImageContainer .line4 {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 10px;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 27px;
+
+  z-index: -1;
+}
+.scaleSize .line4 {
+  top: 85%;
+  left: 40px;
+}
+.fifthImageContainer {
+  margin-left: 100px;
+  position: relative;
+  width: 68px;
+  height: 68px;
+  margin-top: 30px;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.fifthImageContainer .line5 {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5.5rem;
+
+  z-index: -1;
+}
+
+.sixthImageContainer {
+  margin-left: 300px;
+  margin-top: -12px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  position: relative;
+
+  background-color: var(--secondaryColor);
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.sixthImageContainer .line6 {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 24px;
+
+  z-index: -1;
+}
+.seventhImageContainer {
+  margin-left: 165px;
+  margin-top: -6px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--secondaryColor);
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.seventhImageContainer .line7 {
+  content: "";
+  position: absolute;
+  width: 388px;
+  height: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  z-index: -1;
+}
+.eighthImageContainer {
+  margin-left: -8px;
+  margin-top: 10px;
+  transform: translateY(-30px);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+
+  position: relative;
+
+  background-color: var(--secondaryColor);
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.eighthImageContainer .line8 {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 10px;
+  top: 30%;
+  transform: translateY(-50%);
+  left: 59px;
+
+  z-index: -1;
+}
+.ninthImageContainer {
+  margin-left: 375px;
+  margin-top: -40px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--secondaryColor);
+  z-index: 1;
+  opacity: var(--opacity);
+}
+.ninthImageContainer .line9 {
+  content: "";
+  position: absolute;
+  width: 197px;
+  height: 10px;
+
+  transform: translateY(-50%);
+  top: -80px;
+  left: 60px;
+
+  z-index: -1;
+}
+
+.icon {
+  border-radius: 50%;
+}
+.scaleSize {
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+}
+/* main Image */
+.customContainer {
+  max-width: 335px;
+  width: 100%;
+  z-index: 999;
+  margin-top: -22px;
+  position: relative;
+  margin-left: 8px;
+}
+
+.roundedImage {
+  border-radius: 26px;
+  display: block;
+}
