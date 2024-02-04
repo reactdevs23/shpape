@@ -30,9 +30,16 @@
   max-width: 852px;
   width: 100%;
 }
-.firstImageContainer {
+.only3Items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.firstElement,
+.oddElement {
   margin-left: 170px;
-  transform: translateY(-25px);
+
   position: relative;
   z-index: 1;
   border-radius: 50%;
@@ -40,42 +47,74 @@
   width: 68px;
   height: 64px;
   opacity: var(--opacity);
+  position: relative;
 }
-
-.firstImageContainer .line1 {
-  content: " ";
+.firstElement .border {
   position: absolute;
   width: 388px;
-  height: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 68px;
-
+  height: 90%;
+  border-top-right-radius: 50px;
+  border: var(--border);
+  border-bottom: none;
+  border-left: none;
+  top: 90%;
+  right: 0;
+  transform: translate(100%, -50%);
   z-index: -1;
 }
-.secondImageContainer {
-  margin-left: 295px;
 
+.oddElement .highlightBorder {
+  border: var(--highlightBorder);
+  border-bottom: none;
+  border-left: none;
+}
+.oddElement .border {
+  position: absolute;
+  width: 260px;
+
+  border-top-right-radius: 0px;
+  border-top: var(--border);
+
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
+  z-index: -1;
+}
+.moreThan3 .secondLastElement .border {
+  height: 90%;
+  border-bottom-right-radius: 50px;
+  border: var(--border);
+  border-top: none;
+  border-left: none;
+  top: 10%;
+  z-index: -1;
+}
+.oddElement .highlightBorder {
+  border-top: var(--highlightBorder);
+}
+
+.divisibleBy2Not4 {
+  margin-left: 295px;
   width: 68px;
   height: 68px;
-  transform: translateY(-25px);
   border-radius: 50%;
   background-color: white;
   position: relative;
   z-index: 1;
   opacity: var(--opacity);
 }
-.secondImageContainer .line2 {
-  content: "";
+.divisibleBy2Not4 .border {
   position: absolute;
-
-  top: 50%;
-  transform: translateY(-50%);
-  left: 68px;
   width: 184px;
-  height: 10px;
-
+  border-top-right-radius: 0px;
+  border-top: var(--border);
+  top: 50%;
+  right: 0;
+  transform: translate(100%, -50%);
   z-index: -1;
+}
+.divisibleBy2Not4 .highlightBorder {
+  border-top: var(--highlightBorder);
 }
 
 .thirdImageContainer {
@@ -90,7 +129,7 @@
   z-index: 2;
   opacity: var(--opacity);
 }
-.thirdImageContainer .line3 {
+.line3 {
   content: "";
   position: absolute;
   top: 50%;
@@ -100,127 +139,40 @@
   height: 10px;
   z-index: -1;
 }
-.fourthImageContainer {
+.evenElement {
   width: 68px;
   height: 68px;
   border-radius: 50%;
   background-color: var(--secondaryColor);
   position: relative;
   z-index: 1;
-  margin-top: -80px;
   opacity: var(--opacity);
 }
-.fourthImageContainer .line4 {
-  content: "";
+.evenElement .border {
   position: absolute;
   width: 470px;
-  height: 10px;
-  top: 60%;
-  transform: translateY(-50%);
-  left: 27px;
-
-  z-index: -1;
-}
-.scaleSize .line4 {
-  top: 85%;
-  left: 40px;
-}
-.fifthImageContainer {
-  margin-left: 100px;
-  position: relative;
-  width: 68px;
-  height: 68px;
-  margin-top: 30px;
-  border-radius: 50%;
-  background-color: var(--secondaryColor);
-  z-index: 1;
-  opacity: var(--opacity);
-}
-.fifthImageContainer .line5 {
-  content: "";
-  position: absolute;
-  width: 280px;
-  height: 10px;
+  border-top-right-radius: 0px;
+  border-top: var(--border);
   top: 50%;
-  transform: translateY(-50%);
-  left: 5.5rem;
-
+  right: 0;
+  transform: translate(100%, -50%);
   z-index: -1;
 }
-
-.sixthImageContainer {
-  margin-left: 300px;
-  margin-top: -12px;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  position: relative;
-
-  background-color: var(--secondaryColor);
-  z-index: 1;
-  opacity: var(--opacity);
-}
-.sixthImageContainer .line6 {
-  content: "";
-  position: absolute;
-  width: 150px;
-  height: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 24px;
-
+.moreThan3 .secondElement .border {
+  height: 90%;
+  border-top-right-radius: 40px;
+  border: var(--border);
+  border-bottom: none;
+  border-left: none;
+  top: 90%;
   z-index: -1;
 }
-.seventhImageContainer {
-  margin-left: 165px;
-  margin-top: -6px;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  position: relative;
-  background-color: var(--secondaryColor);
-  z-index: 1;
-  opacity: var(--opacity);
+.evenElement .highlightBorder {
+  border-top: var(--highlightBorder);
 }
-.seventhImageContainer .line7 {
-  content: "";
-  position: absolute;
-  width: 388px;
-  height: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
 
-  z-index: -1;
-}
-.eighthImageContainer {
-  margin-left: -8px;
-  margin-top: 10px;
-  transform: translateY(-30px);
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-
-  position: relative;
-
-  background-color: var(--secondaryColor);
-  z-index: 1;
-  opacity: var(--opacity);
-}
-.eighthImageContainer .line8 {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 10px;
-  top: 30%;
-  transform: translateY(-50%);
-  left: 59px;
-
-  z-index: -1;
-}
-.ninthImageContainer {
+.lastElement {
   margin-left: 363px;
-  margin-top: -40px;
   width: 68px;
   height: 68px;
   border-radius: 50%;
@@ -229,27 +181,54 @@
   z-index: 1;
   opacity: var(--opacity);
 }
-.ninthImageContainer .line9 {
-  content: "";
+.lastElement {
+  margin-left: 360px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  background: var(--secondaryColor);
+  width: 68px;
+  height: 64px;
+  opacity: var(--opacity);
+  position: relative;
+}
+.lastElement .border {
   position: absolute;
   width: 197px;
-  height: 10px;
-
-  transform: translateY(-50%);
-  top: -80px;
-  left: 60px;
-
+  height: 90%;
+  border-bottom-right-radius: 50px;
+  border: var(--border);
+  border-top: none;
+  border-left: none;
+  top: 10%;
+  right: 0;
+  transform: translate(100%, -50%);
   z-index: -1;
 }
-
+.only3Items .lastElement {
+  margin-left: 170px;
+}
+.only3Items .lastElement .border {
+  width: 388px;
+}
+.element {
+  margin-top: -17px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primaryColor);
+}
 .icon {
+  width: 100%;
   border-radius: 50%;
 }
-.scaleSize {
-  width: 90px;
-  height: 90px;
+.highlightElement {
+  width: 80px;
+  height: 80px;
   opacity: 1;
 }
+
 /* main Image */
 .customContainer {
   max-width: 335px;
@@ -258,9 +237,20 @@
   margin-top: -22px;
   position: relative;
   margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.centerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 180px;
+  transform: translate(calc(-50%), -50%);
+  z-index: 2;
+}
 .roundedImage {
   border-radius: 26px;
   display: block;
+  width: 100%;
 }
