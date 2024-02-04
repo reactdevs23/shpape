@@ -26,7 +26,7 @@ function App() {
         fourthColor="#5563cf"
       />
     ),
-    centerImage: nLogo,
+    centerImage: slick,
     data: [
       {
         icon: pythonLogo,

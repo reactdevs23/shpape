@@ -11,7 +11,7 @@ const MainComponent = ({ data, container, centerImage }) => {
               className={[
                 styles.imagesContainer,
                 data.length === 3 && styles.only3Items,
-                data.length >= 4 && styles.moreThan3,
+                data.length > 4 && styles.moreThan4,
               ].join(" ")}
             >
               {data.map((el, i) => (

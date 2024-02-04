@@ -8,6 +8,7 @@ import sales from "./sales.svg";
 import slick from "./slick.svg";
 import sql from "./sql.svg";
 import youtube from "./youtube.svg";
+import logo from "./logo.jpg";
 
 export {
   file,
@@ -19,4 +20,5 @@ export {
   slick,
   sql,
   youtube,
+  logo,
 };

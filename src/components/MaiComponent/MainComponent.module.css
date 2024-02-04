@@ -80,7 +80,7 @@
   transform: translate(100%, -50%);
   z-index: -1;
 }
-.moreThan3 .secondLastElement .border {
+.moreThan4 .secondLastElement .border {
   height: 90%;
   border-bottom-right-radius: 50px;
   border: var(--border);
@@ -158,7 +158,7 @@
   transform: translate(100%, -50%);
   z-index: -1;
 }
-.moreThan3 .secondElement .border {
+.moreThan4 .secondElement .border {
   height: 90%;
   border-top-right-radius: 40px;
   border: var(--border);
@@ -194,7 +194,7 @@
 }
 .lastElement .border {
   position: absolute;
-  width: 197px;
+  width: 210px;
   height: 90%;
   border-bottom-right-radius: 50px;
   border: var(--border);
@@ -221,7 +221,11 @@
 }
 .icon {
   width: 100%;
+  height: 100%;
+  display: block;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 }
 .highlightElement {
   width: 80px;
